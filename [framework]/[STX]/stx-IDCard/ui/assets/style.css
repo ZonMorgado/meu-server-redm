@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+@font-face {
+    font-family: "western";
+    src: url("./fonts/ValentineBaby.otf") format("opentype");
+}
+
+body {
+    overflow: hidden;
+}
+
+.idcard {
+    font-family: "western";
+
+    position: absolute;
+    width: 34vw;
+    height: 34vw;
+    background: url('./img/idcard.png') center / 100% 100% no-repeat;
+    top: 16vw;
+    right: 1%;
+    /* transform: translate(0%, -50%); */
+}
+
+.idcard .container {
+    position: relative;
+    /* background-color: rgba(255, 0, 0, 0.37); */
+    width: 85%;
+    height: 75%;
+    top: 7vh;
+    left: 3vw;
+    transform: rotate(14deg);
+
+}
+
+.idcard .container .photo {
+    position: relative;
+    width: 3.9vw;
+    height: 15.3vh;
+
+    top: 4.5vh;
+    transform: rotate(-3deg);
+    border-radius: 0.4vw;
+
+    left: 1.25vw;
+    background: var(--img) center / 100% 100% no-repeat;
+}
+
+.idcard .container .seal {
+    position: absolute;
+    width: 6.6vw;
+    height: 13vh;
+    top: 6vh;
+    left: 5.55vw;
+    background: url('./img/seal.png') center / 100% 100% no-repeat;
+}
+
+.idcard .container .main-information {
+    /* background-color: rgb(79, 124, 26); */
+    position: absolute;
+    top: 48%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    /* transform: translate(0deg); */
+}
+
+
+.idcard .container .main-information .group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1vw;
+    /* align-items: end; */
+}
+
+.idcard .container .main-information .group .label {
+    font-size: 0.8vw;
+
+    color: #5b4123;
+    filter: drop-shadow(0 0 0.75rem #5b4123);
+}
+
+.idcard .container .main-information .group input {
+    background: none;
+    border: none;
+    text-align: left;
+    width: 5vw;
+    font-size: 0.7vw;
+    font-family: "western";
+    color: #5b4123;
+    filter: drop-shadow(0 0 0.75rem #5b4123);
+
+}
+
+.idcard .container .physical-properties {
+    position: relative;
+    left: 63%;
+    top: -3.1vw;
+    height: 37vh;
+    width: 8vw;
+
+    transform: skew(0deg, 5deg);
+    background: none;
+    line-height: 3.6vh;
+
+    text-align: left;
+    font-family: "western";
+    font-size: 0.7vw;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    color: #5b4123;
+    filter: drop-shadow(0 0 0.75rem #5b4123);
+}
+
+.create-container {
+    font-family: "western";
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translate(0%, -50%);
+    color: #5b4123;
+    filter: drop-shadow(0 0 0.75rem #5b4123);
+    box-shadow: 10px 5px 5px #5b4123;
+    padding: 1vw;
+    border-radius: 0.4vw;
+    font-size: 1vw;
+    background-color: #dfd2bb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vh;
+
+}
+
+.create-container h1 {
+    color: #5b4123;
+    filter: drop-shadow(0 0 0.75rem #5b4123);
+}
+
+.create-container .line {
+    position: relative;
+    width: 100%;
+    height: 0.4vh;
+    background-color: #5b4123;
+    border-radius: 50%;
+    box-shadow: 10px 5px 5px #5b4123;
+}
+
+.create-container .group {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.create-container .group .label {
+    text-transform: uppercase;
+}
+
+.create-container .group select,
+.create-container .group textarea,
+.create-container .group input {
+    background: none;
+    border: none;
+    color: #5b4123;
+    font-size: 0.8vw;
+    text-align: center;
+    font-family: "western";
+    border: 0.2vw solid #5b4123;
+    border-radius: 0.4vw;
+    transition: .5s;
+    position: relative;
+
+    /* position: relative; */
+}
+
+.create-container .group select {
+    width: 8vw;
+
+
+}
+
+.create-container .group textarea:focus,
+.create-container .group input:focus {
+    outline: none;
+    border: 0.2vw solid #5b4123;
+    transform: scale(1.1);
+}
+
+.create-container .group textarea {
+    position: relative;
+    width: 16vw;
+    height: 10vh;
+}
+
+.create-container .create-btn {
+    /* background-color: red; */
+    padding: 0.5vw;
+    border-radius: 0.4vw;
+    background-color: #5b4123;
+    color: #dfd2bb;
+    font-size: 1vw;
+
+    filter: drop-shadow(0 0 0.75rem #5b4123);
+    box-shadow: 10px 5px 5px #dfd2bb;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.create-container .create-btn:hover {
+    transform: scale(1.05);
+    letter-spacing: 2px;
+
+}
+
+textarea {
+    resize: none;
+    overflow: hidden;
+
+}
+
+.bscript {
+    position: relative;
+    width: 4vw;
+    height: 8vh;
+    top: -130%;
+    left: 75%;
+}

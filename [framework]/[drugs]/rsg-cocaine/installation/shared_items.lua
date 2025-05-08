@@ -1,0 +1,4 @@
+	-- to support Cocaine
+	['cocaineseed'] = 	{ ['name'] = 'cocaineseed',  	['label'] = 'Cocaine Seed', ['weight'] = 100, 	['type'] = 'item', ['image'] = 'seeds.png', 		['unique'] = false,	 ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ["degrade"] = 1.0, ['description'] = 'you put a lime in the coke you nut!'},
+	['cocaine'] 	= 	{ ['name'] = 'cocaine', 	 	['label'] = 'Cocaine Leaf', ['weight'] = 100, 	['type'] = 'item', ['image'] = 'cocaineleaf.png', 	['unique'] = false,	 ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ["degrade"] = 1.0, ['description'] = '10x Cocaine Leaf = 1x Cocaine Bag'},
+	['cocainebag'] 	= 	{ ['name'] = 'cocainebag',  	['label'] = 'Cocaine Bag',	['weight'] = 1000, 	['type'] = 'item', ['image'] = 'cocainebag.png',	['unique'] = false,  ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ["degrade"] = 1.0, ['description'] = 'Contraband Selling Item!'},

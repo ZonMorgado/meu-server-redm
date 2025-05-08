@@ -1,0 +1,17 @@
+{
+    "cl_lang_1" : "Campfire Menu",
+    "cl_lang_2" : "Too Far!",
+    "cl_lang_3" : "you placed your campfire too far away move it closer",
+    "cl_lang_4" : "Campfire Menu",
+    "cl_lang_5" : "Cook Food",
+    "cl_lang_6" : "Destroy Campfire",
+    "cl_lang_7" : "Cooking Menu",
+    "cl_lang_8" : "Knife Needed",
+    "cl_lang_9" : "you need a knife to be able to cook",
+    "cl_lang_10" : "Cooking ",
+    "cl_lang_11" : "Cooking items missing!",
+    "cl_lang_12" : "Restricted Area!",
+    "cl_lang_13" : "you are not able to setup a campfire in town",
+    "sv_lang_1" : "Item Cooked",
+    "sv_lang_2" : ") cooked a "
+}

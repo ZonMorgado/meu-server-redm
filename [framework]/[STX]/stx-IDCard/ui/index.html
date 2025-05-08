@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"
+        integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+    <script src="./assets/main.js"></script>
+</head>
+
+<body>
+    <div class="create-container" style="display: none;">
+        <h1>Create IDCard</h1>
+        <div class="line"></div>
+        <div class="group">
+            <div class="label">Image</div>
+            <input type="text" name="" id="image" value="https://i.ibb.co/rG4365VS/image.png">
+        </div>
+        <div class="group">
+            <div class="label">Name</div>
+            <input type="text" name="" id="name" placeholder="Firstname Lastname">
+        </div>
+        <div class="group">
+            <div class="label">Date Of Birth</div>
+            <input type="text" name="" id="dob" placeholder="Date Of Birth">
+        </div>
+        <div class="group">
+            <div class="label">Place Of Birth</div>
+            <input type="text" name="" id="pob" placeholder="Place Of Birth">
+        </div>
+        <div class="group">
+            <div class="label">Marital Status</div>
+            <!-- <input type="text" name="" id="marital" value="Marital Status"> -->
+            <select name="" id="marital">
+                <option value="Bachelor">Bachelor</option>
+                <option value="Married">Married</option>
+            </select>
+        </div>
+        <div class="group">
+            <div class="label">Physical Properties</div>
+            <textarea name="" id="physical"></textarea>
+        </div>
+        <div class="create-btn">Create</div>
+    </div>
+    <div class="idcard" style="display: none;">
+        <div class="container">
+            <div class="photo" style="--img: url('https://i.ibb.co/rG4365VS/image.png')"></div>
+            <div class="seal"></div>
+            <div class="main-information">
+                <div class="group">
+                    <div class="label">Name: </div>
+                    <input type="text" name="" id="name2" value="Britney Toxic" disabled>
+                </div>
+                <div class="group">
+                    <div class="label">Date Of Birth: </div>
+                    <input type="text" name="" id="dob2" value="Britney Toxic" disabled>
+                </div>
+                <div class="group">
+                    <div class="label">Place Of Birth: </div>
+                    <input type="text" name="" id="pob2" value="Britney Toxic" disabled>
+                </div>
+                <div class="group">
+                    <div class="label">Marital Status: </div>
+                    <input type="text" name="" id="marital2" value="Britney Toxic" disabled>
+                </div>
+            </div>
+            <textarea class="physical-properties" name="" id="" disabled></textarea>
+
+            <div class="bscript"></div>
+        </div>
+    </div>
+</body>
+
+</html>

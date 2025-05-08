@@ -1,0 +1,131 @@
+Config = {}
+
+Config.RSGV2 = true
+Config.core = 'rsg-core'
+
+Config.BpoItem = "bpoarmoredwagon"
+
+Config.DynamiteItem = "dynamite"
+
+Config.RewardItems = {
+    'goldbar', -- example
+    'goldwatch', -- example
+}
+
+-- set item rewards amount
+Config.SmallRewardAmount = 1
+Config.MediumRewardAmount = 2
+Config.LargeRewardAmount = 3
+
+-- set the money award gveing for large reward amount
+Config.MoneyRewardType = 'cash' -- cash or bloodmoney
+Config.MoneyRewardAmount = 500 -- amount of money to give player
+
+Config.StartMission = vector3(-246.3241, 959.9016, 138.6333) -- if you need a ped at the trigger point please place a ped at this same coords using your npcs script
+Config.StartPoint = vector3(-76.3352, 1044.0851, 161.9368) -- start Mission and start Point shouldnt be too far away so everything spawns properly
+Config.DestinationPoint = vector3(-262.0404, 806.7529, 118.7903)
+
+-- bandits will follow the wagon, keep bandits spawn relativily close to the starting point
+Config.Bandits = {
+    {
+        bandits = {
+            vector3(-75.0498, 1037.8107, 162.1335),
+            vector3(-72.5721, 1034.6448, 162.5227),
+            vector3(-71.1183, 1053.2427, 162.8518),
+            vector3(-74.1587, 1058.0886, 162.9311),
+            vector3(-78.7867, 1058.1779, 162.3935),
+        }
+    },
+}
+
+-- Weapons used by bandits
+Config.Weapons = {
+    0xF5175BA1
+}
+-- Horses used by dandits
+Config.HorseModels = {
+    "A_C_HORSE_GANG_KIERAN",
+    "A_C_HORSE_MORGAN_BAY",
+    "A_C_HORSE_MORGAN_BAYROAN",
+    "A_C_HORSE_MORGAN_FLAXENCHESTNUT",
+    "A_C_HORSE_MORGAN_PALOMINO",
+    "A_C_HORSE_KENTUCKYSADDLE_BLACK",
+    "A_C_HORSE_KENTUCKYSADDLE_CHESTNUTPINTO",
+    "A_C_HORSE_KENTUCKYSADDLE_GREY",
+    "A_C_HORSE_KENTUCKYSADDLE_SILVERBAY",
+    "A_C_HORSE_TENNESSEEWALKER_BLACKRABICANO",
+    "A_C_HORSE_TENNESSEEWALKER_CHESTNUT",
+    "A_C_HORSE_TENNESSEEWALKER_DAPPLEBAY",
+    "A_C_HORSE_TENNESSEEWALKER_REDROAN",
+    "A_C_HORSE_AMERICANPAINT_GREYOVERO",
+    "A_C_HORSE_AMERICANSTANDARDBRED_PALOMINODAPPLE",
+    "A_C_HORSE_AMERICANSTANDARDBRED_SILVERTAILBUCKSKIN",
+    "A_C_HORSE_ANDALUSIAN_DARKBAY",
+    "A_C_HORSE_ANDALUSIAN_ROSEGRAY",
+    "A_C_HORSE_APPALOOSA_BROWNLEOPARD",
+    "A_C_HORSE_APPALOOSA_LEOPARD",
+    "A_C_HORSE_ARABIAN_BLACK",
+    "A_C_HORSE_ARABIAN_ROSEGREYBAY",
+    "A_C_HORSE_ARDENNES_BAYROAN",
+    "A_C_HORSE_ARDENNES_STRAWBERRYROAN",
+    "A_C_HORSE_BELGIAN_BLONDCHESTNUT",
+    "A_C_HORSE_BELGIAN_MEALYCHESTNUT",
+    "A_C_HORSE_DUTCHWARMBLOOD_CHOCOLATEROAN",
+    "A_C_HORSE_DUTCHWARMBLOOD_SEALBROWN",
+    "A_C_HORSE_DUTCHWARMBLOOD_SOOTYBUCKSKIN",
+    "A_C_HORSE_HUNGARIANHALFBRED_DARKDAPPLEGREY",
+    "A_C_HORSE_HUNGARIANHALFBRED_PIEBALDTOBIANO",
+    "A_C_HORSE_MISSOURIFOXTROTTER_AMBERCHAMPAGNE",
+    "A_C_HORSE_MISSOURIFOXTROTTER_SILVERDAPPLEPINTO",
+    "A_C_HORSE_NOKOTA_REVERSEDAPPLEROAN",
+    "A_C_HORSE_SHIRE_DARKBAY",
+    "A_C_HORSE_SHIRE_LIGHTGREY",
+    "A_C_HORSE_SUFFOLKPUNCH_SORREL",
+    "A_C_HORSE_SUFFOLKPUNCH_REDCHESTNUT",
+    "A_C_HORSE_TENNESSEEWALKER_FLAXENROAN",
+    "A_C_HORSE_THOROUGHBRED_BRINDLE",
+    "A_C_HORSE_TURKOMAN_DARKBAY",
+    "A_C_HORSE_TURKOMAN_GOLD",
+    "A_C_HORSE_TURKOMAN_SILVER",
+    "A_C_HORSE_GANG_BILL",
+    "A_C_HORSE_GANG_CHARLES",
+    "A_C_HORSE_GANG_DUTCH",
+    "A_C_HORSE_GANG_HOSEA",
+    "A_C_HORSE_GANG_JAVIER",
+    "A_C_HORSE_GANG_JOHN",
+    "A_C_HORSE_GANG_KAREN",
+    "A_C_HORSE_GANG_LENNY",
+    "A_C_HORSE_GANG_MICAH",
+    "A_C_HORSE_GANG_SADIE",
+    "A_C_HORSE_GANG_SEAN",
+    "A_C_HORSE_GANG_TRELAWNEY",
+    "A_C_HORSE_GANG_UNCLE",
+    "A_C_HORSE_GANG_SADIE_ENDLESSSUMMER",
+    "A_C_HORSE_GANG_CHARLES_ENDLESSSUMMER",
+    "A_C_HORSE_GANG_UNCLE_ENDLESSSUMMER",
+    "A_C_HORSE_AMERICANPAINT_OVERO",
+    "A_C_HORSE_AMERICANPAINT_TOBIANO",
+    "A_C_HORSE_AMERICANPAINT_SPLASHEDWHITE",
+    "A_C_HORSE_AMERICANSTANDARDBRED_BLACK",
+    "A_C_HORSE_AMERICANSTANDARDBRED_BUCKSKIN",
+    "A_C_HORSE_APPALOOSA_BLANKET",
+    "A_C_HORSE_APPALOOSA_LEOPARDBLANKET",
+    "A_C_HORSE_ARABIAN_WHITE",
+    "A_C_HORSE_HUNGARIANHALFBRED_FLAXENCHESTNUT",
+    "A_C_HORSE_MUSTANG_GRULLODUN",
+    "A_C_HORSE_MUSTANG_WILDBAY",
+    "A_C_HORSE_MUSTANG_TIGERSTRIPEDBAY",
+    "A_C_HORSE_NOKOTA_BLUEROAN",
+    "A_C_HORSE_NOKOTA_WHITEROAN",
+    "A_C_HORSE_THOROUGHBRED_BLOODBAY",
+    "A_C_HORSE_THOROUGHBRED_DAPPLEGREY",
+    "A_C_Donkey_01",
+}
+-- bandits models
+Config.BanditsModel = {
+    "G_M_M_UniBanditos_01",
+    "A_M_M_GRIFANCYDRIVERS_01",
+    "A_M_M_NEAROUGHTRAVELLERS_01",
+    "A_M_M_RANCHERTRAVELERS_COOL_01",
+    "A_M_M_RANCHERTRAVELERS_WARM_01",
+}
