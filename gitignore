@@ -1,0 +1,10 @@
+*.log
+*.zip
+*.rar
+.cache/
+node_modules/
+ox_inventory/web/
+downloads/
+Thumbs.db
+.DS_Store
+*.bak
